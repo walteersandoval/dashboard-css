@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Reemplaza "styles.css" con la ubicación de tu archivo CSS -->
+    <title>Tu página con estilos CSS</title>
+</head>
+<style>
+   html {
+  height: 100%;
+  width: 100%;
+}
+ /* Estilos para el elemento #builderall_social_proof */
+    #builderall_social_proof {
+        background: rgba(255, 255, 255, 0.9); /* Color rosa con transparencia */
+        backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+        min-width: 350px;
+        height: 13%;
+        border-radius: 20px; /* Radio de los bordes */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 9999999;
+        padding-right: 0px;
+        padding-top: 8px;
+        overflow: hidden;
+        line-height: 1.2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #6f0fac;
+        font-size: 15px;
+    }
+
+    /* Estilos para la clase .basp_dark */
+    .basp_dark {
+        background-color: #411b72!important;
+        color: #fff !important;
+    }
+
+    /* Estilos para las clases de posición */
+    .basp_top_left {
+        left: 10px;
+        top: 10px;
+    }
+
+    .basp_top_right {
+        right: 10px;
+        top: 10px;
+    }
+
+    .basp_bottom_left {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .basp_bottom_right {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    /* Estilos para la clase .with-pointer */
+    .with-pointer {
+        cursor: pointer;
+    }
+
+    /* Estilos para la clase .basp_icon */
+    .basp_icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        margin-left: 8px;
+        margin-right: 8px;
+        float: left;
+    }
+
+    /* Estilos para la clase .basp_user_name */
+    .basp_user_name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* Estilos para la clase .basp_purchased_lbl */
+    .basp_purchased_lbl {
+        display: inline-block;
+        white-space: nowrap;
+        width: 250px;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+
+    /* Estilos para la clase .fade-in */
+    .fade-in {
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: .3s;
+    }
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+  .controladores label {
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  .controladores {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .controladores label {
+      font-family: 'Roboto', sans-serif;
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  .controladores input[type="range"],
+  .controladores input[type="color"] {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+  }
+
+  #copyCodeButton {
+      background-color: #6200ea;
+      color: #ffffff;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  #copyCodeButton:hover {
+      background-color: #3700b3;
+  }
+
+  .controladores input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      background-color: #ccc;
+      outline: none;
+  }
+
+  .controladores input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background-color: #6200ea;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+
+  .controladores input[type="color"] {
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+  }
+
+
+    /* Estilos para la sección .ui-improvements */
+    .ui-improvements {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+    }
+
+    .ui-improvements h3 {
+        margin-top: 0;
+    }
+
+    .ui-improvements p {
+        margin-bottom: 10px;
+    }
+  .banner {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+   .banner img {
+        max-width: 100%; /* Esto asegura que la imagen no exceda el ancho del banner */
+        margin: 10px 0; /* Esto añade un margen arriba y abajo de la imagen */
+        border-radius: 10px; /* Esto redondea las esquinas de la imagen */
+     width: 100%;
+    }
+   .contenedor-principal {
+        display: flex;
+    }
+
+    .vistaPrevia {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <div id="builderall_social_proof" class="basp_top_left fade-in">
+        <div class="basp_icon"></div>
+        <div class="basp_user_name">Nombre de Usuario</div>
+        <div class="basp_from_lbl">De:</div>
+        <div class="basp_purchased_lbl">Producto comprado</div>
+        <div class="basp_when_lbl">Cuando</div>
+        <div class="basp_empty_image"></div>
+    </div>
+ <div class="banner">
+    <h1></h1>
+    <p></p>
+    <img src="/banner.png" alt="Descripción de la imagen" />
+</div>
+
+    <div class="controladores">
+        <h2>Configuración de Estilos</h2>
+        <label for="textColor">Color de Texto:</label>
+        <input type="color" id="textColor">
+        <br>
+
+        <label for="transparency">Transparencia del Blur:</label>
+        <input type="range" id="transparency" min="0" max="100" step="1" value="90">
+        <br>
+
+        <label for="blurColor">Color del Blur:</label>
+        <input type="color" id="blurColor">
+        <br>
+
+        <label for="borderRadius">Radio de los Bordes:</label>
+        <input type="range" id="borderRadius" min="0" max="50" step="1" value="20">
+        <br>
+
+        <label for="shadowIntensity">Intensidad de la Sombra:</label>
+        <input type="range" id="shadowIntensity" min="0" max="20" step="1" value="16">
+        <br>
+
+        <label for="width">Ancho:</label>
+        <input type="range" id="width" min="100" max="1000" step="1" value="350">
+        <br>
+
+        <label for="height">Alto:</label>
+        <input type="range" id="height" min="50" max="500" step="1" value="13">
+        <br>
+
+        <button id="copyCodeButton">Copiar Código CSS</button>
+    </div>
+   
+    <script>
+        const socialProof = document.getElementById('builderall_social_proof');
+        const textColorInput = document.getElementById('textColor');
+        const transparencyInput = document.getElementById('transparency');
+        const blurColorInput = document.getElementById('blurColor');
+        const borderRadiusInput = document.getElementById('borderRadius');
+        const shadowIntensityInput = document.getElementById('shadowIntensity');
+        const widthInput = document.getElementById('width');
+        const heightInput = document.getElementById('height');
+        const copyCodeButton = document.getElementById('copyCodeButton');
+
+        textColorInput.addEventListener('input', () => {
+            const textColor = textColorInput.value;
+            socialProof.style.color = textColor;
+        });
+
+        transparencyInput.addEventListener('input', () => {
+            const transparency = transparencyInput.value;
+            socialProof.style.backgroundColor = `rgba(255, 255, 255, ${transparency / 100})`;
+        });
+
+        blurColorInput.addEventListener('input', () => {
+            const blurColor = blurColorInput.value;
+            socialProof.style.backgroundColor = `rgba(${parseInt(blurColor.slice(1, 3), 16)}, ${parseInt(blurColor.slice(3, 5), 16)}, ${parseInt(blurColor.slice(5, 7), 16)}, ${parseFloat(socialProof.style.backgroundColor.slice(-4, -1))})`;
+        });
+
+        borderRadiusInput.addEventListener('input', () => {
+            const borderRadius = borderRadiusInput.value;
+            socialProof.style.borderRadius = `${borderRadius}px`;
+        });
+
+        shadowIntensityInput.addEventListener('input', () => {
+            const shadowIntensity = shadowIntensityInput.value;
+            socialProof.style.boxShadow = `0px 8px ${shadowIntensity}px rgba(0, 0, 0, 0.1)`;
+        });
+
+        widthInput.addEventListener('input', () => {
+            const width = widthInput.value;
+            socialProof.style.minWidth = `${width}px`;
+        });
+
+        heightInput.addEventListener('input', () => {
+            const height = heightInput.value;
+            socialProof.style.height = `${height}px`;
+        });
+
+        copyCodeButton.addEventListener('click', () => {
+            const cssCode = `
+/* Estilos para el elemento #builderall_social_proof */
+#builderall_social_proof {
+    background: ${socialProof.style.backgroundColor};
+    backdrop-filter: blur(10px);
+    color: ${socialProof.style.color};
+    border-radius: ${socialProof.style.borderRadius};
+    box-shadow: ${socialProof.style.boxShadow};
+    min-width: ${socialProof.style.minWidth};
+    height: ${socialProof.style.height};
+    position: fixed;
+    z-index: 9999999;
+    padding-right: 0px;
+    padding-top: 8px;
+    overflow: hidden;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+/* (El resto de tu CSS aquí) */
+`;
+
+            copyToClipboard(cssCode);
+        });
+
+        // Función para copiar texto al portapapeles
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert("Código CSS copiado al portapapeles.");
+        }
+    </script>
+</body>
+</html>
